@@ -8,12 +8,13 @@ case $- in
       *) return;;
 esac
 
-export PS1="\[\033[38;5;7m\][\T\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput
-sgr0)\]\[\033[38;5;7m\]\d]\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput
-sgr0)\]\[\033[38;5;10m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]
-\[\033[38;5;4m\]\w\[$(tput sgr0)\]\$(git branch 2> /dev/null | sed -e '/^[^*]/d'
--e 's/* \(.*\)/ (\1)/')\[\033[00m\]]\[\033[3
-8;5;15m\]\\$\[$(tput sgr0)\] "
+# I am never writing this again holy crap
+export PS1="\[\033[38;5;7m\][\T\[$(tput sgr0)\]\[\033[38;5;15m\]
+\[$(tput sgr0)\]\[\033[38;5;7m\]\d]\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput
+sgr0)\]\[\033[38;5;10m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput
+sgr0)\]\[\033[38;5;4m\]\w\[$(tput sgr0)\]\[\033[38;5;11m\]\$(git branch 2>
+/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/')\[$(tput
+sgr0)\]\[\033[38;5;15m\]\\$\[$(tput sgr0)\] "
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
