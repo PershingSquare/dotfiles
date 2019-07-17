@@ -1,7 +1,3 @@
-if has("linux")
-    set gfx=IBM\ Plex\ Mono;h14,:Hack\14,Source\ Code\ Pro\ 12, Bitstream\ Vera\ Sans\ Mono\ 11
-endif
-
 set background=dark
 colorscheme peaksea
 
@@ -46,6 +42,7 @@ set hlsearch
 " No annoying sounds on errors
 set noerrorbells
 set novisualbell
+set belloff=all
 set t_vb=
 set tm=500
 
@@ -145,3 +142,7 @@ au FileType python map <buffer> <leader>D ?def
 au FileType python set cindent
 au FileType python set cinkeys-=0#
 au FileType python set indentkeys-=0#
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
