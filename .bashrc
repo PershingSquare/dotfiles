@@ -127,3 +127,4 @@ export PS1="\[\033[38;5;7m\][\T \[$(tput sgr0)\]\[\033[38;5;15m\]\[$(tput sgr0)\
 LD_LIBRARY_PATH=/usr/local/lib
 export DISPLAY=localhost:0.0
 export FILE="ranger"
+export DOCKER_HOST=tcp://localhost:2375
